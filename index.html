@@ -3,6 +3,23 @@
 <!---->
   <head>
 
+  <link rel="stylesheet" href="media/indxcolorful.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+<script type="text/javascript">
+      $('a').click(function(){
+            $('body').append('<embed src="media/click.mp3" autostart="true" hidden="true" loop="false">');
+            pause(2000);   //Number of milliseconds to pause
+            window.location = http://www.google.com 
+        });
+        function pause(milliseconds) {
+            var dt = new Date();
+            while ((new Date()) - dt <= milliseconds) { /* Do nothing */ }
+        }
+  </script>
+<!--
     <script type="text/javascript">
 
     alert("g8.com.ve quiere saber tu Ubicación Geográfica");
@@ -15,17 +32,24 @@
   }(" (((((((((g8.com.ve: apoyo incondicional a israel))))))))) (((((((((ellos saben))))))))) "));
 
     </script>
-
-      <audio autoplay>
+-->
+      <audio autoplay="true">
          <source src="media/indexbgm.mp3" type="audio/mpeg">
            en que coño de cueva vives
       </audio>
 
   </head>
 
-    <body style="background: url(images/3dgun.gif) right bottom no-repeat, url(images/indexbg.gif) no-repeat center fixed; background-size: cover; ">
+    <body>
+
+        <div class="fullscreen-bg">
+        <video loop muted autoplay poster="bgframe.jpg" class="fullscreen-bg__video">
+           <source src="bg.webm" type="video/webm">
+         </video>
+        </div>
+
         <center>
-          <img src="images/indeximg.jpg" width="200">
+          <img src="media/indeximg.jpg" width="200">
           <h1>g8.com.ve</h1>
           <h6><center>La pagina definitiva para esas personas con problemas gastrointestinales que buscan paz en su interior.</center></h6>
 
@@ -34,7 +58,8 @@
           <!--endlynks-->
 
 
-            <p><br>
+
+            <p class="a"><br>
             Hecha por el carajo que estaba en la parte de atras del salon murmurando cosas con un cuchillo de bolsillo
         en la mano, g8.com.ve es la maxima expresion de arte avant-garde postmoderno en la internet. Contando con mas de
         ([numero]) de paginas diferentes sacadas de la imaginacion de este individuo con diferentes personalidades inestables
@@ -46,6 +71,10 @@
         skype una vez que hable con ella/nada/todo.
             </p>
         </center>
+
+
+              <a href="https://g8.com.ve">Click to play...</a>
+
 
     </body>
 </html>
